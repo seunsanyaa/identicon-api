@@ -7,7 +7,7 @@ defmodule Identiconapi.Images do
   alias Identiconapi.Repo
 
   alias Identiconapi.Images.Image
-  defstruct hex: nil, color: nil, grid: nil, pixel_map: nil
+#  defstruct hex: nil, color: nil, grid: nil, pixel_map: nil
 
 
   @doc """

@@ -1,21 +1,21 @@
 defmodule IdenticonapiWeb.ImageView do
   use IdenticonapiWeb, :view
   alias IdenticonapiWeb.ImageView
+  alias Identiconapi.Images.Manipulation
 
   def render("show.json", %{image: image}) do
 
-    render_one(image, ImageView, "image.json")
+    image = Manipulation.main(image.url)
+
+
+
+#    render_one(image, ImageView, "image.json")
+    %{url: image}
+
     
   end
 
-  def render("image.json", %{image: image}) do
 
-    %{url: image.url}
-
-
-
-
-  end
 
 
   
