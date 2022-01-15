@@ -141,10 +141,10 @@ defmodule Identiconapi.Images.Manipulation do
 
 
     def save_image(image, input) do
-#    sample = %{a: 1, b: 2}
-#
+
     File.write("#{input}.png", image)
     {:ok, details}= Cloudinex.Uploader.upload_file("#{input}.png")
+    File.rm("#{input}.png")
 
     details["secure_url"]
 
@@ -155,7 +155,6 @@ defmodule Identiconapi.Images.Manipulation do
 
 
 
-#    "image"
 
 
 
