@@ -47,6 +47,17 @@ config :logger, :console,
 # Use Jason for JSON parsing in Phoenix
 config :phoenix, :json_library, Jason
 
+config :tesla, :adapter, Tesla.Adapter.Hackney
+
+#CLOUDINARY
+config :cloudinex,
+       debug: false, #optional
+       base_url: "https://api.cloudinary.com/v1_1/",
+       api_key: "544872892972733",
+       secret: "cfAnMWBNiN36bomkQY4qAazva8U",
+       cloud_name: "seunsanyaa"
+
+
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
 import_config "#{config_env()}.exs"

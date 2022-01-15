@@ -20,7 +20,7 @@ defmodule Identiconapi.MixProject do
   def application do
     [
       mod: {Identiconapi.Application, []},
-      extra_applications: [:logger, :runtime_tools]
+      extra_applications: [:logger, :runtime_tools, :hackney]
     ]
   end
 
@@ -49,7 +49,10 @@ defmodule Identiconapi.MixProject do
       {:gettext, "~> 0.18"},
       {:jason, "~> 1.2"},
       {:plug_cowboy, "~> 2.5"},
-      {:egd, github: "erlang/egd"}
+      {:egd, github: "erlang/egd"},
+      {:cloudinex, "~> 0.6.0"},
+      {:hackney, "~> 1.13"},
+      {:poison, "~> 5.0"}
     ]
   end
 

@@ -3,6 +3,7 @@ defmodule Identiconapi.Images.Manipulation do
 
 
 
+
     def main(input) do
       input
       |> hash_input
@@ -63,7 +64,6 @@ defmodule Identiconapi.Images.Manipulation do
       row ++ [a,b]
 
 
-#      row ++ [row[1], row[0]]
 
 
 
@@ -141,7 +141,28 @@ defmodule Identiconapi.Images.Manipulation do
 
 
     def save_image(image, input) do
-      File.write("#{input}.png",image)
+#    sample = %{a: 1, b: 2}
+#
+    File.write("#{input}.png", image)
+    {:ok, details}= Cloudinex.Uploader.upload_file("#{input}.png")
+
+    details["secure_url"]
+
+
+
+
+
+
+
+
+#    "image"
+
+
+
+
+
+
+
     end
 
 

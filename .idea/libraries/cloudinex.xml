@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="cloudinex" type="mix">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/cloudinex/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/cloudinex/ebin" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/deps/cloudinex/lib" />
+      <root url="file://$PROJECT_DIR$/deps/cloudinex/lib" />
+    </SOURCES>
+  </library>
+</component>

@@ -5,12 +5,12 @@ defmodule IdenticonapiWeb.ImageView do
 
   def render("show.json", %{image: image}) do
 
-    image = Manipulation.main(image.url)
+            imageurl = Manipulation.main(image.url)
 
 
 
-#    render_one(image, ImageView, "image.json")
-    %{url: image}
+        #    render_one(image, ImageView, "image.json")
+            %{url: imageurl}
 
     
   end
